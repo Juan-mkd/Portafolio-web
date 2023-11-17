@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Martel+Sans:wght@300;400;600;700&display=swap');
+
+/* variables */
+:root{
+    --color-p:#ffffff;
+    --color-primary:#1F2326;
+    --font-size-title:24px;
+    --font-size-p:18px;
+    --font-family-one:'Kurale', serif;
+    --font-family-two:'Martel Sans', sans-serif;
+}
+
+
+body{
+    background: #1F2326;
+}
+
+/* estilos de la cabecera */
+header .bg-portafolio{
+    width: 100%;
+    position: relative;   
+}
+header .bg-portafolio ul li .nav-link,.navbar-brand{
+    color: var(--color-p);
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-one);
+   
+}
+.navbar-brand span{
+    font-size: 35px;
+    color: var(--color-p);
+}
+header .hero{
+    width: 100%;
+    background: url(../img/hero.png);
+    background-size: cover;
+
+}
+header .hero img{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+header .hero h2{
+    color: var(--color-p);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+header .hero h5{
+    color: var(--color-p);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-bottom: 150px;
+}
+
+
+/* estilos section perfil */
+#perfil{
+    width: 100%;
+}
+
+#perfil h3{
+    color: #fff;
+    text-align: center;
+    font-size: var(--font-size-title);
+
+}
+#perfil h6{
+    color:#fff;
+    font-size: var(--font-size-p);
+    margin-top: 50px;
+    font-family: var(--font-family-two);
+}
+
+
+
+#perfil .intereses .card{
+    margin-top: 35px ;
+    background: none;
+    border: none;
+    margin-top: 85px;
+}
+#perfil .intereses .card h3{
+    font-size: var(--font-size-title);
+    margin-top: 15px;
+
+}
+#perfil .intereses .card img{
+    width: 100px;
+    margin: 0 auto;
+}
+#perfil button{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 115px;
+    color: #fff;
+    background: #1F2326;
+    font-size: 26px;
+}
+#perfil h6{
+    margin-bottom: 150px;
+}
+
+
+#perfil .datos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 40px 25px;
+    margin-top: 50px;
+  
+}
+
+/* estilos estudios */
+
+
+#estudios {
+    width: 100%;
+    position: relative;
+}
+#estudios .st{
+    margin-top: 150px;
+    background: url(../img/estudios.png);
+    background-size: cover;
+    padding-bottom: 150px;
+}
+#estudios .study{
+    display: block;
+    align-items: center;
+    color: #fff;
+    padding-top: 55px;
+    margin-left: 130px;
+    justify-content: space-evenly;
+}
+
+
+#estudios .study h4 {
+    margin-left: 100px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+#estudios .study .one{
+    left: 0;
+}
+#estudios .study .two{
+    left: 0;
+}
+
+#estudios h2{
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* estilos section habilidades */
+
+#habilidades{
+    width: 100%;
+    position: relative;
+    padding-top: 80px;
+}
+#habilidades h3{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 180px;
+}
+#habilidades h4{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+#habilidades .barra{
+    padding: 12px 60px;
+}
+#habilidades .barra p{
+    color: #fff;
+    font-size: 20px;
+}
+#habilidades .barra .progress-bar{
+    background:   #3D8E7F;
+}
+
+#habilidades .barra.js{
+    position: relative;
+    z-index: 1;
+}
+#habilidades .barra.js::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "56%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 280px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+#habilidades .barra.html{
+    position: relative;
+    z-index: 1;
+}
+#habilidades .barra.html::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "45%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 260px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#habilidades .barra.php{
+    position: relative;
+    z-index: 1;
+}
+
+#habilidades .barra.php::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "40%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 230px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#habilidades .barra.python{
+    position: relative;
+    z-index: 1;
+}
+
+#habilidades .barra.python::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "48%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 270px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#habilidades .comunicacion{
+    position: relative;
+    z-index: 1;
+}
+#habilidades .comunicacion::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "63%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 350px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#habilidades .creatividad{
+    position: relative;
+    z-index: 1;
+}
+#habilidades .creatividad::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "52%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 300px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+#habilidades .trabajo{
+    position: relative;
+    z-index: 1;
+}
+
+#habilidades .trabajo::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "60%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 340px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#habilidades .flexibilidad{
+    position: relative;
+    z-index: 1;
+}
+#habilidades .flexibilidad::before{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "88%";
+    position: absolute;
+    z-index: 9;
+    background: #3D8E7F;
+    left: 490px;
+    top: 44px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+/* estuilos section proyectos  */
+
+
+#proyectos{
+    width: 100%;
+    position: relative;
+    margin-top: 160px;
+}
+#proyectos .proyectos2{
+    margin-top: 55px;
+    padding: 25px 30px;
+    display: flex;
+}
+
+#proyectos h3{
+    color: #fff;
+     text-align: center;
+}
+#proyectos .proyectos2 p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 150px;
+}
+#proyectos  .proyectos2 img{
+    width: 40%;
+    height: 70%;
+    border: solid 2px black;
+}
+/* estilos de esperiencia  */
+#experiencia{
+    width: 100%;
+    position: relative;
+  
+}
+#experiencia h3{
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+#experiencia p{
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 200px;
+    margin-top: 45px;
+}
+#experiencia img{
+    display: flex;
+    margin: 0 auto;
+    margin-top: -120px;
+    width: 40%;
+}
+
+/* estilos section redes sociales */
+#redes{
+    width: 100%;
+    position: relative;
+}
+#redes h3{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 150px ;
+    margin-bottom: 80px;
+}
+#redes .social{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#redes .social img{
+    width: 60px;
+    height: 60px;
+}
+
+/* estilos del footer */
+footer{
+    background: rgba(96, 100, 96, 0.834);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+
+/* responsive  */
+
+/* responsive tablet */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    background: #fff;
+}
+.navbar-brand{
+    font-size: 35px;
+}
+#perfil .datos{
+    display: block;
+    
+}
+#perfil .personal .datos{
+    padding: 15px 25px;
+}
+#perfil .intereses  .card{
+    margin: 18px 26px;
+}
+#perfil .personal  .datos img{
+   display: none;
+   padding-left: 150px;
+ 
+}
+#habilidades .barra.js::before{
+    left: 155px;
+}
+#habilidades .barra.html::before{
+    left: 150px;
+}
+#habilidades .barra.php::before{
+    left: 137px;
+}
+#habilidades .barra.python::before{
+    left: 157px;
+}
+#habilidades .comunicacion::before{
+    left: 187px;
+
+}
+#habilidades .creatividad::before{
+    left: 167px;
+}
+#habilidades .trabajo::before{
+    left: 182px;
+}
+#habilidades .flexibilidad::before{
+    left: 228px;
+}
+}
+
+/* responsive para celular */
+@media screen and (min-width:320px) and (max-width:767px){
+    header .hero img{
+        width: 46%;
+
+    }
+    header .hero h2{
+        font-size: 20px;
+    }
+
+
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+        background: #fff;
+    }
+    .navbar-brand{
+        font-size: 32px;
+    }
+    #perfil .datos{
+        display: block;
+        
+    }
+    #perfil .personal .datos{
+        padding: 15px 25px;
+    }
+    #perfil .intereses  .card{
+        margin: 18px 26px;
+    }
+    #perfil .personal  .datos img{
+       display: none;
+       padding-left: 150px;
+     
+    }
+    #habilidades .barra.js::before{
+        left: 145px;
+    }
+    #habilidades .barra.html::before{
+        left: 134px;
+    }
+    #habilidades .barra.php::before{
+        left: 126px;
+    }
+    #habilidades .barra.python::before{
+        left: 140px;
+    }
+    #habilidades .comunicacion::before{
+        left: 166px;
+    
+    }
+    #habilidades .creatividad::before{
+        left: 147px;
+    }
+    #habilidades .trabajo::before{
+        left: 160px;
+    }
+    #habilidades .flexibilidad::before{
+        left: 190px;
+    }
+    #proyectos .proyectos2{
+        display: block;
+    }
+    #proyectos .proyectos2 p{
+        padding-right: 0px;
+        font-size: var(--font-size-p);
+    }
+    #proyectos .proyectos2 img{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+    #experiencia img{
+        width: 70%;
+    }
+    #experiencia p{
+        padding: 25px;
+    }
+    header .hero h5{
+        padding-bottom: 80px;
+    }
+    #perfil h6{
+        padding: 18px 25px;
+        margin-bottom: 100px;
+    }
+    #perfil h3 {
+        margin-top: 120px;
+        margin-bottom: 100px;
+    }
+    #perfil .intereses .card img{
+        width: 26%;
+    }
+    #perfil .intereses .card h3{
+        margin-top: 29px;
+    }
+    #perfil .intereses .card{
+        margin: -11px 20px;
+    }
+    #estudios .study img{
+        margin-left: -48px;
+        margin-right: 35px;
+    }
+    #habilidades h3{
+        margin-bottom: 110px;
+    }
+    #habilidades h4{
+        margin-bottom: 60px;
+    }
+    #habilidades h4{
+        margin-top: 140px;
+    }
+
+    #estudios .study{
+        display: block;
+        margin-left: -100px;
+    }
+}
